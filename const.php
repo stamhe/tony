@@ -12,5 +12,3 @@ define('PRIMARY_DBPREFIX','bg_');
 define('DBNAME','exam');
 //页面编码
 define('CHARSET','utf-8');
-
-
