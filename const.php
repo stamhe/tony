@@ -9,6 +9,6 @@ define('DBCHARSET','utf8');
 define('DBPREFIX','pg_');
 //主表的前缀
 define('PRIMARY_DBPREFIX','bg_');
-define('DBNAME','exam');
+define('DBNAME','test');
 //页面编码
 define('CHARSET','utf-8');
