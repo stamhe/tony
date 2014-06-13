@@ -6,9 +6,9 @@ define('DBPWD','root');
 define('DBPORT','3306');
 define('DBCHARSET','utf8');
 //表前缀
-define('DBPREFIX','pg_');
+define('DBPREFIX','db_');
 //主表的前缀
-define('PRIMARY_DBPREFIX','bg_');
+define('PRIMARY_DBPREFIX','cdb_');
 define('DBNAME','test');
 //页面编码
 define('CHARSET','utf-8');
