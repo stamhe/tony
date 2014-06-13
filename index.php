@@ -8,7 +8,7 @@ require_once APP_PATH . '/DriverPdo.class.php';
 
 try {
     $db = DriverPdo::getInstance();
-    $sql = sprintf("SELECT * FROM `%smembers` ORDER BY `uid` ASC LIMIT 10", PRIMARY_DBPREFIX);
+    $sql = sprintf("SELECT * FROM `%smembers` ORDER BY `uid` ASC LIMIT 10", DBPREFIX);
     $rows = $db->fetchAll($sql);
     echo '<pre>';
     print_r($rows);
