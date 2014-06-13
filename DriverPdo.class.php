@@ -14,7 +14,7 @@ class DriverPdo {
 
     private function __construct() {
         $dsn = sprintf('mysql:dbname=%s;host=%s;port=%u;charset=%s', DBNAME, DBHOST, DBPORT, DBCHARSET);
-        $option = array(PDO::ATTR_PERSISTENT => false);
+        $option = array(PDO::ATTR_PERSISTENT => true);
         $this->db = new PDO($dsn, DBUSER, DBPWD, $option);
         if ($this->db->errorCode() != '0000') {
             echo sprintf('%s%s%s', '无法连接到数据库服务器', $this->db->errorInfo());
