@@ -1,8 +1,7 @@
 <?php
 //单例模式pdo数据库类
-// http://www.cnblogs.com/xiaochaohuashengmi/archive/2010/08/12/1797753.html
-// http://blog.csdn.net/qq635785620/article/details/11284591
 class DriverPdo {
+    
     private $db;
     private static $instance;
 
