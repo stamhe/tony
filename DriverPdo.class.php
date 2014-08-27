@@ -17,7 +17,7 @@ class DriverPdo {
         $option = array(PDO::ATTR_PERSISTENT => true);
         $this->db = new PDO($dsn, DBUSER, DBPWD, $option);
         if ($this->db->errorCode() != '0000') {
-            echo sprintf('%s%s%s', '无法连接到数据库服务器', $this->db->errorInfo());
+            echo sprintf('%s%s', '无法连接到数据库服务器', $this->db->errorInfo());
             exit;
         }
         $this->db->query("SET NAMES " . DBCHARSET);
